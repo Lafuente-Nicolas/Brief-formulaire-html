@@ -102,10 +102,22 @@
         <input type="text" id="autre" name="autre">
     </li>
 </ul>
+<!--ajout d'un pattern pour que les numéros correspondent-->
+<ul>
+    <li>
+        <label for="securité sociale">Numéro de sécurité sociale :</label>
+        <input type="text" id="securité sociale" name="securité sociale"
+        pattern="[0-9]{15}$" placeholder="123456789012345" required> 
+    </li>
+</ul>
 
-
-
-
+<ul>
+    <li>
+        <label for="numéro de paseport">Numéro de passeport :</label>
+        <input type="text" id="numéro de paseport" name="numéro de paseport"
+        pattern="[A-Z]{2}[0-9]{7}" placeholder="AB1234567" required>
+    </li>
+</ul>
 
 </body>
 
